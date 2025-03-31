@@ -8,4 +8,4 @@
 
 # Tampilan Dari pada website Local-Host
 
-![alt text](?https://github.com/Cyber-Wan-Ac/Website-eid-ramadhan/blob/main/Tampilan.jpgraw=true)
+![alt text](?https://github.com/Cyber-Wan-Ac/Website-eid-ramadhan/blob/main/Tampilan.jpg,raw=true)
