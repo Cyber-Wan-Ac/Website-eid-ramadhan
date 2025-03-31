@@ -14,7 +14,7 @@ html_code = '''
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-image: url('{{ url_for(filename='baiturrahman.jpg') }}');
+            background-image: url('/filename='baiturrahman.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -62,7 +62,7 @@ html_code = '''
 </head>
 <body>
     <audio autoplay loop>
-        <source src="{{ url_for(filename='takbir.mp3') }}" type="audio/mpeg">
+        <source src="/takbir.mp3" type="audio/mpeg">
     </audio>
     <h1>Selamat Hari Raya Idul Fitri 1446 H</h1>
     <p>Semoga semua amal ibadah kita diterima dan diberkahi oleh Allah SWT. <br>
