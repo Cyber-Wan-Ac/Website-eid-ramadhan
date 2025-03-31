@@ -92,7 +92,7 @@ def baiturrahman():
 
 @app.route('/takbir.mp3')
 def takbir():
-    return send_file('takbir.mp3')
+    return send_file('takbir.mp3',mimetype='audio/mpeg')
 
 @app.route('/thr', methods=['POST'])
 def thr():
