@@ -1,9 +1,8 @@
-from flask import Flask, render_template_string, send_file, redirect
-import os
+from flask import Flask, render_template_string, redirect, url_for, send_file
 
 app = Flask(__name__)
 
-thr_link = "https://www.dana.id/"  # Ganti dengan link THR Anda
+thr_link = "https://contoh-link-thr.com"  # Ganti dengan link THR kamu
 
 html_code = '''
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ html_code = '''
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-image: url('/filename='baiturrahman.jpg');
+            background-image: url('/baiturrahman.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -66,7 +65,7 @@ html_code = '''
         <source src="/takbir.mp3" type="audio/mpeg">
     </audio>
     <h1>Selamat Hari Raya Idul Fitri 1446 H</h1>
-    <p>Semoga semua amal ibadah kita diterima dan diberkahi oleh Allah SWT. <br>
+    <p>Semoga semua amal ibadah kita diterima dan diberkahi oleh Allah SWT.<br>
     <strong>Taqabbalallahu minna wa minkum. Maaf lahir dan batin.</strong></p>
     <form action="/thr" method="POST">
         <button type="submit">Klik di sini untuk Ambil THR</button>
@@ -78,6 +77,14 @@ html_code = '''
 @app.route('/', methods=['GET'])
 def index():
     return render_template_string(html_code)
+
+@app.route('/baiturrahman.jpg')
+def baiturrahman():
+    return send_file('baiturrahman.jpg')
+
+@app.route('/takbir.mp3')
+def takbir():
+    return send_file('takbir.mp3')
 
 @app.route('/thr', methods=['POST'])
 def thr():
