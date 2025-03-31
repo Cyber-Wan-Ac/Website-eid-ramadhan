@@ -11,14 +11,22 @@ html_code = '''
     <title>Selamat Hari Raya Idul Fitri</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-image: url('/baiturrahman.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
+           font-family: Arial, sans-serif;
+           text-align: center;
+           margin: 0;
+           padding: 0;
+           height: 100vh;
+           width: 100%;
+           background-image: url('/baiturrahman.jpg');
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-attachment: fixed;
+           color: white;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
         }
         h1 {
             color: #FFD700;
