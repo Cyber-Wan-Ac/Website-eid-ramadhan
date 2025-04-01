@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-thr_link = "https://contoh-link-thr.com"  # Ganti dengan link THR kamu
+thr_link = input("Masukan Link Untuk THR Raya")
 
 html_code = '''
 <!DOCTYPE html>
